@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mitblog.css">
+    <title>Mitblog</title>
+</head>
+<body>
+    <div class="encabezado">
+        <img class="logo" src="mitlogo.png">
+        <h1 class="titulo">Mitblog</h1>
+        <button id="btn-login">Login</button>
+    </div>
+    <div class="cuerpo">
+        <div class="mitmodal" id="myModal">
+            <h2>Ingrese sus datos</h2>
+            <form action="/action_page.php">
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="lname">Clave:</label><br>
+                <input type="text" id="key" name="key" value=""><br><br>
+                <input type="submit" value="Entrar">
+              </form> 
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("btn-login");
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+    </script>
+</body>
+</html>
